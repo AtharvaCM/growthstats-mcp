@@ -1,0 +1,27 @@
+{
+  "name": "growthstats-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p packages/sdk-utils/tsconfig.json && tsc -p packages/servers/contentops/tsconfig.json && tsc -p packages/servers/devworkflow/tsconfig.json",
+    "dev:devworkflow": "node packages/servers/devworkflow/dist/index.js",
+    "test": "echo 'No tests'"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.0.3",
+    "@types/node": "^24.3.0",
+    "conventional-changelog-conventionalcommits": "^7.0.2",
+    "semantic-release": "^23.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "growthstats-contentops": {
+      "command": "node",
+      "args": [
+        "packages/servers/contentops/dist/index.js"
+      ],
+      "env": {
+        "SANITY_PROJECT_ID": "xxxx",
+        "SANITY_DATASET": "production",
+        "SANITY_TOKEN": "env:SANITY_TOKEN",
+        "NEXT_REVALIDATE_SECRET": "env:NEXT_REVALIDATE_SECRET",
+        "NEXT_REVALIDATE_URL": "https://growthstats.io/api/revalidate"
+      }
+    },
+    "growthstats-devworkflow": {
+      "command": "node",
+      "args": [
+        "packages/servers/devworkflow/dist/index.js"
+      ],
+      "env": {
+        "REPO_PATH": "/absolute/path/to/your/growthstats-app",
+        "GITHUB_TOKEN": "env:GITHUB_TOKEN"
+      }
+    }
+  }
+}
