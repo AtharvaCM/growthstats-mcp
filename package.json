@@ -1,0 +1,18 @@
+{
+  "name": "growthstats-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p packages/servers/contentops/tsconfig.json",
+    "test": "echo 'No tests'"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.4.0"
+  }
+}
