@@ -18,5 +18,5 @@ npm run build
 The server entry is configured in `mcp.json` and can be started via an MCP-compatible runtime or directly with Node:
 
 ```bash
-node dist/servers/contentops/index.js
+node packages/servers/contentops/dist/index.js
 ```

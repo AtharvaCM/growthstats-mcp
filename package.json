@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p packages/servers/contentops/tsconfig.json",
     "test": "echo 'No tests'"
   },
   "dependencies": {

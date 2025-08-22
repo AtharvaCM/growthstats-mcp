@@ -3,7 +3,7 @@
     "growthstats-contentops": {
       "command": "node",
       "args": [
-        "dist/servers/contentops/index.js"
+        "packages/servers/contentops/dist/index.js"
       ],
       "env": {
         "SANITY_PROJECT_ID": "xxxx",
