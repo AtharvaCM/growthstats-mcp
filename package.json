@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "build": "tsc -p packages/sdk-utils/tsconfig.json && tsc -p packages/servers/contentops/tsconfig.json && tsc -p packages/servers/devworkflow/tsconfig.json",
+    "dev:contentops": "node packages/servers/contentops/dist/index.js",
     "dev:devworkflow": "node packages/servers/devworkflow/dist/index.js",
     "test": "echo 'No tests'"
   },

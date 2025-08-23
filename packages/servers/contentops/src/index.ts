@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
-import { Server } from '@modelcontextprotocol/sdk/dist/server/index'
-import { StdioServerTransport } from '@modelcontextprotocol/sdk/dist/server/stdio'
-import { ListToolsRequestSchema, CallToolRequestSchema } from '@modelcontextprotocol/sdk/dist/types'
+import { Server } from '@modelcontextprotocol/sdk/server/index.js'
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
+import { ListToolsRequestSchema, CallToolRequestSchema } from '@modelcontextprotocol/sdk/types.js'
 
 type Tool = {
   name: string
