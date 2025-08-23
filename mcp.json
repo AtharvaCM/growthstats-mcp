@@ -6,11 +6,11 @@
         "packages/servers/contentops/dist/index.js"
       ],
       "env": {
-        "SANITY_PROJECT_ID": "xxxx",
-        "SANITY_DATASET": "production",
+        "SANITY_PROJECT_ID": "env:SANITY_PROJECT_ID",
+        "SANITY_DATASET": "env:SANITY_DATASET",
         "SANITY_TOKEN": "env:SANITY_TOKEN",
         "NEXT_REVALIDATE_SECRET": "env:NEXT_REVALIDATE_SECRET",
-        "NEXT_REVALIDATE_URL": "https://growthstats.io/api/revalidate"
+        "NEXT_REVALIDATE_URL": "env:NEXT_REVALIDATE_URL"
       }
     },
     "growthstats-devworkflow": {
@@ -19,7 +19,7 @@
         "packages/servers/devworkflow/dist/index.js"
       ],
       "env": {
-        "REPO_PATH": "/absolute/path/to/your/growthstats-app",
+        "REPO_PATH": "env:REPO_PATH",
         "GITHUB_TOKEN": "env:GITHUB_TOKEN"
       }
     }
