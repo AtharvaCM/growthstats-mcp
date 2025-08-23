@@ -22,3 +22,7 @@ The servers are configured in `mcp.json` and can be started via an MCP-compatibl
 node packages/servers/contentops/dist/index.js
 node packages/servers/devworkflow/dist/index.js
 ```
+
+### Environment variables
+
+Copy `.env.example` to `.env` and fill in the required values. The `mcp.json` file references these values using the `env:` prefix so that secrets are loaded from your local environment and are not committed to source control.
